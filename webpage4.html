@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Membership Page</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>LIBRARY MEMBERSHIP PAGE</h1>
+    </center>
+
+    <hr>
+
+    <h1>College Library Membership</h1>
+
+    <p>Welcome to the college library. Explore books and build your knowledge.</p>
+
+    <p><i>Read the instructions before applying.</i></p>
+
+    <a href="#membership">Go to Membership Form</a>
+
+    <hr>
+
+    <h2>1. Lists</h2>
+
+    <h3>Documents Required</h3>
+
+    <ul>
+        <li>Student ID card</li>
+        <li>Passport-size photograph</li>
+    </ul>
+
+    <h3>Application Steps</h3>
+
+    <ol>
+        <li>Choose a membership type</li>
+        <li>Complete the form</li>
+        <li>Visit the library</li>
+    </ol>
+
+    <h3>ISBN</h3>
+
+    <dl>
+        <dt>ISBN</dt>
+        <dd>International Standard Book Number</dd>
+    </dl>
+
+    <hr>
+
+    <h2>2. Library Hours</h2>
+
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Opening</th>
+            <th>Closing</th>
+        </tr>
+
+        <tr>
+            <td>Monday to Friday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>1:00 PM</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>3. Inline Frame</h2>
+
+    <iframe
+        title="Library Notice"
+        width="400"
+        height="100"
+        srcdoc="<h2>Library Notice</h2><p>Return borrowed books within 14 days.</p>">
+    </iframe>
+
+    <hr>
+
+    <h2 id="membership">4. Membership Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="membership">Membership:</label><br>
+
+        <select id="membership" name="membership">
+            <option value="">Select a type</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <br><br>
+
+        <strong>Reading Mode:</strong><br>
+
+        <input type="radio" id="print" name="reading" value="print">
+        <label for="print">Print</label>
+
+        <input type="radio" id="digital" name="reading" value="digital">
+        <label for="digital">Digital</label>
+
+        <br><br>
+
+        <strong>Interests:</strong><br>
+
+        <input type="checkbox" id="science" name="interests" value="science">
+        <label for="science">Science</label>
+
+        <input type="checkbox" id="literature" name="interests" value="literature">
+        <label for="literature">Literature</label>
+
+        <br><br>
+
+        <label for="suggestions">Book Suggestions:</label><br>
+
+        <textarea id="suggestions" name="suggestions" rows="3" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the library rules.</label>
+
+        <br><br>
+
+        <button type="submit">Apply</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
